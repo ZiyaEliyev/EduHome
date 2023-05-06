@@ -1,0 +1,46 @@
+﻿@model List<Service>
+<!-- Bordered Table -->
+<div class="card">
+    <div class="card-header" style="display:flex;justify-content:space-between">
+        <h2>
+            Services
+        </h2>
+        <div>
+            <a class="btn btn-primary text-white rounded-pill" style="margin-right:10px">Create</a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive text-nowrap">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                      
+                        @*<th>Status</th>*@
+                        <th style="text-align:right">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   @foreach (Service item in Model)
+                    {
+                        <tr>
+                            <td>
+                                <i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>@item.Name</strong>
+                            </td>
+                            @* <td><span class="badge bg-label-primary me-1">Active</span></td>*@
+                            <td>
+                                <div style="display:flex;justify-content:flex-end">
+                                    <a class="btn btn-warning text-white rounded-pill" style="margin-right:10px">Detail</a>
+                                    <a class="btn btn-info text-white rounded-pill" style="margin-right:10px">Update</a>
+                                    <a class="btn btn-danger text-white rounded-pill" style="margin-right:10px">Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                 
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--/ Bordered Table -->
