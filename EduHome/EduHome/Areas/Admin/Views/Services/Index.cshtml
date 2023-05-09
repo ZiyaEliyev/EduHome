@@ -15,13 +15,13 @@
                 <thead>
                     <tr>
                         <th>Name</th>
-                      
+
                         @*<th>Status</th>*@
                         <th style="text-align:right">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
-                   @foreach (Service item in Model)
+                    @foreach (Service item in Model)
                     {
                         <tr>
                             <td>
@@ -30,14 +30,14 @@
                             @* <td><span class="badge bg-label-primary me-1">Active</span></td>*@
                             <td>
                                 <div style="display:flex;justify-content:flex-end">
-                                    <a class="btn btn-warning text-white rounded-pill" style="margin-right:10px">Detail</a>
-                                    <a class="btn btn-info text-white rounded-pill" style="margin-right:10px">Update</a>
-                                    <a class="btn btn-danger text-white rounded-pill" style="margin-right:10px">Delete</a>
+                                    <a class="btn btn-warning text-white rounded-pill" style="margin-right:10px" asp-action="Detail" asp-route-id="@item.Id">Detail</a>
+                                    <a class="btn btn-info text-white rounded-pill" style="margin-right:10px" asp-action="Update" asp-route-id="@item.Id">Update</a>
+                                    <a class="btn btn-danger text-white rounded-pill" style="margin-right:10px" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                                 </div>
                             </td>
                         </tr>
                     }
-                 
+
                 </tbody>
             </table>
         </div>
