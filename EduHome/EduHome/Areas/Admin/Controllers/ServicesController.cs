@@ -21,5 +21,23 @@ namespace EduHome.Areas.Admin.Controllers
             List<Service> services = await _db.Services.ToListAsync();
             return View(services);
         }
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(Service service)
+        {
+            bool isExist = await _db.Services.AnyAsync(x=>x.Name==service.Name);
+            if (isExist)
+            {
+                ModelState.AddModelError("Name", "This service is already exist !");
+                return View();
+            }
+            await _db.Services.AddAsync(service);
+            await _db.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
     }
 }
