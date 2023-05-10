@@ -322,3 +322,4 @@ C:\Users\USER\Desktop\EduHome\EduHome\EduHome\obj\Debug\net5.0\Razor\Areas\Admin
 C:\Users\USER\Desktop\EduHome\EduHome\EduHome\obj\Debug\net5.0\Razor\Areas\Admin\Views\Services\Create.cshtml.g.cs
 C:\Users\USER\Desktop\EduHome\EduHome\EduHome\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\USER\Desktop\EduHome\EduHome\EduHome\obj\Debug\net5.0\Razor\Areas\Admin\Views\Services\Update.cshtml.g.cs
+C:\Users\USER\Desktop\EduHome\EduHome\EduHome\obj\Debug\net5.0\Razor\Areas\Admin\Views\Services\Detail.cshtml.g.cs

@@ -82,5 +82,20 @@ namespace EduHome.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
         #endregion
+        #region Detail
+        public async Task<IActionResult> Detail(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            Service dbService = await _db.Services.FirstOrDefaultAsync(x => x.Id == id);
+            if (dbService == null)
+            {
+                return BadRequest();
+            }
+            return View(dbService);
+        }
+        #endregion
     }
 }
