@@ -82,6 +82,7 @@ namespace EduHome.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
         #endregion
+
         #region Detail
         public async Task<IActionResult> Detail(int? id)
         {
@@ -97,5 +98,61 @@ namespace EduHome.Areas.Admin.Controllers
             return View(dbService);
         }
         #endregion
+
+        #region Delete
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            Service dbService = await _db.Services.FirstOrDefaultAsync(x => x.Id == id);
+            if (dbService == null)
+            {
+                return BadRequest();
+            }
+            return View(dbService);
+        }
+        [HttpPost]
+        [ActionName("Delete")]
+        public async Task<IActionResult> DeletePost(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            Service dbService = await _db.Services.FirstOrDefaultAsync(x => x.Id == id);
+            if (dbService == null)
+            {
+                return BadRequest();
+            }
+            dbService.IsDeactive = true;
+            await _db.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+        public async Task<IActionResult> Activity(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            Service dbService = await _db.Services.FirstOrDefaultAsync(x => x.Id == id);
+            if (dbService == null)
+            {
+                return BadRequest();
+            }
+            if (dbService.IsDeactive)
+            {
+                dbService.IsDeactive = false;
+            }
+            else
+            {
+                dbService.IsDeactive = true;
+            }
+            await _db.SaveChangesAsync();
+            return RedirectToAction("Index");
+            #endregion
+        }
     }
 }
+

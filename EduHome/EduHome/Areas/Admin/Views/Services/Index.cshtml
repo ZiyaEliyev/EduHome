@@ -16,7 +16,7 @@
                     <tr>
                         <th>Name</th>
 
-                        @*<th>Status</th>*@
+                        <th>Status</th>
                         <th style="text-align:right">Actions</th>
                     </tr>
                 </thead>
@@ -27,12 +27,32 @@
                             <td>
                                 <i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>@item.Name</strong>
                             </td>
-                            @* <td><span class="badge bg-label-primary me-1">Active</span></td>*@
+                            <td style="text-align:center">
+                            @if (item.IsDeactive)
+                            {
+                                    <span style="padding:4px 6px;background-color:red;color:white;border-radius:4px">Deactive</span>
+                                }
+                                else
+                                {
+                                    <span style="padding:4px 6px;background-color:green;color:white;border-radius:4px">Active</span>
+                              
+                                }
+                            </td>
+                            
                             <td>
                                 <div style="display:flex;justify-content:flex-end">
                                     <a class="btn btn-warning text-white rounded-pill" style="margin-right:10px" asp-action="Detail" asp-route-id="@item.Id">Detail</a>
                                     <a class="btn btn-info text-white rounded-pill" style="margin-right:10px" asp-action="Update" asp-route-id="@item.Id">Update</a>
-                                    <a class="btn btn-danger text-white rounded-pill" style="margin-right:10px" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                    @if (item.IsDeactive)
+                                    {
+                                        <a class="btn btn-success text-white rounded-pill" style="margin-right:10px;width:118px" asp-action="Activity" asp-route-id="@item.Id">Activate</a>
+
+                                    }
+                                    else
+                                    {
+                                        <a class="btn btn-danger text-white rounded-pill" style="margin-right:10px;width:118px" asp-action="Activity" asp-route-id="@item.Id">DeActivate</a>
+
+                                    }
                                 </div>
                             </td>
                         </tr>

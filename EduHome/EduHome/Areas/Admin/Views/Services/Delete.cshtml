@@ -1,0 +1,21 @@
+﻿@model Service
+<div class="row">
+    <div class="col-8">
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0 alert alert-danger">Are you sure delete @Model.Name service ?</h5>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <a asp-action="Index" class="btn btn-secondary">Go Back</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
