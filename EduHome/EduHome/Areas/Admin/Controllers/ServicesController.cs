@@ -29,6 +29,7 @@ namespace EduHome.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Service service)
         {
             bool isExist = await _db.Services.AnyAsync(x => x.Name == service.Name);
@@ -58,6 +59,8 @@ namespace EduHome.Areas.Admin.Controllers
             return View(dbService);
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public async Task<IActionResult> Update(int? id, Service service)
         {
             if (id == null)
@@ -114,6 +117,7 @@ namespace EduHome.Areas.Admin.Controllers
             return View(dbService);
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         [ActionName("Delete")]
         public async Task<IActionResult> DeletePost(int? id)
         {
@@ -152,6 +156,7 @@ namespace EduHome.Areas.Admin.Controllers
             await _db.SaveChangesAsync();
             return RedirectToAction("Index");
             #endregion
+
         }
     }
 }
