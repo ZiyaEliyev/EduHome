@@ -134,6 +134,9 @@ namespace EduHome.Areas.Admin.Controllers
             await _db.SaveChangesAsync();
             return RedirectToAction("Index");
         }
+
+
+        #region Activity
         public async Task<IActionResult> Activity(int? id)
         {
             if (id == null)
@@ -155,9 +158,10 @@ namespace EduHome.Areas.Admin.Controllers
             }
             await _db.SaveChangesAsync();
             return RedirectToAction("Index");
-            #endregion
+        } 
+        #endregion
 
-        }
+        #endregion
     }
 }
 

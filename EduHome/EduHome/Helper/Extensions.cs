@@ -9,7 +9,7 @@ namespace EduHome.Helper
     {
         public static bool IsImage(this IFormFile file)
         {
-            return file.ContentType.Contains("images/");
+            return file.ContentType.Contains("image/");
         }
         
         public static bool IsOlder1Mb(this IFormFile file)
