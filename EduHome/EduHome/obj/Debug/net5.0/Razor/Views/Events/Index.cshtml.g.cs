@@ -19,8 +19,15 @@ using EduHome;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\USER\Desktop\EduHome\EduHome\EduHome\Views\_ViewImports.cshtml"
+using EduHome.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ee3b64ee34f59c44e1edb90ef834733c36835396", @"/Views/Events/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e750b947cdb1fe1351ce25e247d436a62157cdb2", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d58d541c71e17d632d8281e50f540afe9c21fd1d", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Events_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -85,7 +92,7 @@ using EduHome;
                     <div class=""event-img"">
                         <a href=""event-details.html"">
                             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee3b64ee34f59c44e1edb90ef834733c368353967453", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee3b64ee34f59c44e1edb90ef834733c368353967628", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -123,7 +130,7 @@ using EduHome;
             <div class=""col-md-4 col-sm-6 col-xs-12"">
         ");
             WriteLiteral("        <div class=\"single-event mb-60\">\r\n                    <div class=\"event-img\">\r\n                        <a href=\"event-details.html\">\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee3b64ee34f59c44e1edb90ef834733c368353969819", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee3b64ee34f59c44e1edb90ef834733c368353969994", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -161,7 +168,7 @@ using EduHome;
             <div class=""col-md-4 col-sm-6 col-xs-12"">
     ");
             WriteLiteral("            <div class=\"single-event mb-60\">\r\n                    <div class=\"event-img\">\r\n                        <a href=\"event-details.html\">\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee3b64ee34f59c44e1edb90ef834733c3683539612189", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee3b64ee34f59c44e1edb90ef834733c3683539612364", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -199,7 +206,7 @@ using EduHome;
             <div class=""col-md-4 col-sm-6 col-xs-12"">
  ");
             WriteLiteral("               <div class=\"single-event mb-60\">\r\n                    <div class=\"event-img\">\r\n                        <a href=\"event-details.html\">\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee3b64ee34f59c44e1edb90ef834733c3683539614563", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee3b64ee34f59c44e1edb90ef834733c3683539614738", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -237,7 +244,7 @@ using EduHome;
             <div class=""col-md-4 col-sm-6 col-xs-12"">
      ");
             WriteLiteral("           <div class=\"single-event mb-60\">\r\n                    <div class=\"event-img\">\r\n                        <a href=\"event-details.html\">\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee3b64ee34f59c44e1edb90ef834733c3683539616933", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee3b64ee34f59c44e1edb90ef834733c3683539617108", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -275,7 +282,7 @@ using EduHome;
             <div class=""col-md-4 col-sm-6 col-xs-12"">
   ");
             WriteLiteral("              <div class=\"single-event mb-60\">\r\n                    <div class=\"event-img\">\r\n                        <a href=\"event-details.html\">\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee3b64ee34f59c44e1edb90ef834733c3683539619306", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee3b64ee34f59c44e1edb90ef834733c3683539619481", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -313,7 +320,7 @@ using EduHome;
             <div class=""col-md-4 col-sm-6 col-xs-12"">
           ");
             WriteLiteral("      <div class=\"single-event\">\r\n                    <div class=\"event-img\">\r\n                        <a href=\"event-details.html\">\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee3b64ee34f59c44e1edb90ef834733c3683539621665", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee3b64ee34f59c44e1edb90ef834733c3683539621840", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -351,7 +358,7 @@ using EduHome;
             <div class=""col-md-4 col-sm-6 hidden-xs"">
    ");
             WriteLiteral("             <div class=\"single-event\">\r\n                    <div class=\"event-img\">\r\n                        <a href=\"event-details.html\">\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee3b64ee34f59c44e1edb90ef834733c3683539624031", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee3b64ee34f59c44e1edb90ef834733c3683539624206", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -389,7 +396,7 @@ using EduHome;
             <div class=""col-md-4 hidden-sm hidden-xs"">
     ");
             WriteLiteral("            <div class=\"single-event\">\r\n                    <div class=\"event-img\">\r\n                        <a href=\"event-details.html\">\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee3b64ee34f59c44e1edb90ef834733c3683539626396", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee3b64ee34f59c44e1edb90ef834733c3683539626571", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
