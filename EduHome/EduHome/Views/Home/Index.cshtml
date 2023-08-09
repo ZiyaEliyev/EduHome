@@ -1,8 +1,8 @@
-﻿	@model List<Slider>
+﻿	@model HomeVM
 <!-- Background Area Start -->
         <section id="slider-container" class="slider-area two"> 
             <div class="slider-owl owl-theme owl-carousel"> 
-               @foreach (Slider slider in Model)
+               @foreach (Slider slider in Model.Sliders)
         {
             <!-- Start Slingle Slide -->
             <div class="single-slide item" style="background-image: url(../img/slider/@slider.Image)">
@@ -34,24 +34,15 @@
         <div class="service-area two pt-150 pb-150">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="single-service">
-                            <h3><a href="teacher.html">PROFESSIONAL TEACHER</a></h3>
-                            <p>I must explain to you how all this mistaken denouncing pleure and praising pain </p>
-                        </div>
+                   @foreach (Service service in Model.Services)
+            {
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="single-service">
+                        <h3><a href="teacher.html">@service.Name</a></h3>
+                        <p>@service.Description</p>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="single-service">
-                            <h3><a href="teacher.html">PROFESSIONAL TEACHER</a></h3>
-                            <p>I must explain to you how all this mistaken denouncing pleure and praising pain </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="single-service">
-                            <h3><a href="teacher.html">PROFESSIONAL TEACHER</a></h3>
-                            <p>I must explain to you how all this mistaken denouncing pleure and praising pain </p>
-                        </div>
-                    </div>
+                </div>
+            }
                 </div>
             </div>
         </div>
